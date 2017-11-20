@@ -1,4 +1,6 @@
 
+
+
 var game = {
 	
 	questionArray:[
@@ -49,6 +51,8 @@ var game = {
 	correct: 0,
 	incorrect: 0,
 	score: 0,
+
+    
 	displayQuestion: function(){
 	console.log (game.correct)
 	console.log (game.questionNumber)	
