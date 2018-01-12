@@ -1,7 +1,6 @@
 
 body {
-	float:right;
-	background-size:150%;
+	background-size:cover;
 	padding:50px;
 }
 
@@ -11,19 +10,19 @@ body {
 	border-style: double;
 	margin:auto;
 	font-family: 'Josefin Slab', serif;
-
 	}
-img {
+
+.guesses {
 	padding-top:10px;
-	display: block;
-    margin: auto;
+	display:inline;
+	margin:auto;
+	text-align: center;
 }
-	  #display { 
-	  	height: 100%; 
-	  	width: 100%; 
-	  	padding: 50px; 
-	  	padding-bottom: 50px; 	  	
-	  } 	  
+img {	
+	display:block;
+	margin: auto;
+	text-align: center;
+}	  
 	  #buttons { 
 	  	text-align: center;
 	  } 
@@ -33,46 +32,16 @@ img {
 	  	width: 200px; 
 	  }
 
-	  #time{
-	  	text-align: center;
-	  }
-	  .mydiv {  
-	  	display: inline;  
-	  } 
-	  .hidden{  
-	  	display: none:  
-	  } 
-	  .wrapper{ 
-	  	display: inline;  
-	  } 
-	  .display-word{ 
-	  	text-align: center; 
-	  } 
-	  .reset-button{ 
-	  	text-align: center; 
-	  } 
-	  .question-num{
-	  	text-align: center; 
-	  }
-	  .previous-guess{ 
-	  	text-align: center; 
-	  } 
-	  .guessed-answer{
-	  	text-align: center;
-	  }
-	  .previous-answer{
-	  	text-align: center;
-	  }
-	  .correct-incorrect{
-	  	text-align: center;
-	  }
-	  .score
-	  {
-	  	text-align: center;
-	  }
-	  .score-percentage{
-	  	text-align: center;
-	  }
-	  .game-over{
-	  	text-align: center;
-	  }}
+
+	  @media (max-width: 800px) {
+		img {   
+			width: 100%;
+			padding: 0;
+		}
+	}
+	
+	/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+	@media (max-width: 400px) {
+		img  {
+			width:100%;
+		}
